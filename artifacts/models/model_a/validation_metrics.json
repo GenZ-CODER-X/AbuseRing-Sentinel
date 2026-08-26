@@ -1,0 +1,51 @@
+{
+  "confusion_matrix": {
+    "format": "[[true_negative, false_positive], [false_negative, true_positive]]",
+    "labels": [
+      0,
+      1
+    ],
+    "rows": [
+      [
+        71222,
+        712
+      ],
+      [
+        1262,
+        1291
+      ]
+    ]
+  },
+  "evaluation_partition": "validation",
+  "f1_at_selected_threshold": 0.5667251975417033,
+  "false_negative_count": 1262,
+  "false_positive_count": 712,
+  "fraud_count": 2553,
+  "fraud_prevalence": 0.03427443715010673,
+  "pr_auc_average_precision": 0.5596029447853526,
+  "precision_at_selected_threshold": 0.6445332001997004,
+  "recall_at_fpr_le_1_percent": {
+    "fpr": 0.009897962020741235,
+    "fpr_cap": 0.01,
+    "recall": 0.5056795926361144,
+    "threshold": 0.7496764158124354
+  },
+  "recall_at_fpr_le_point_1_percent": {
+    "fpr": 0.000987015875663803,
+    "fpr_cap": 0.001,
+    "recall": 0.21504112808460635,
+    "threshold": 0.970265905333441
+  },
+  "recall_at_selected_threshold": 0.5056795926361144,
+  "roc_auc": 0.9097458918880367,
+  "row_count": 74487,
+  "threshold_selection": {
+    "method": "Maximize validation recall subject to FPR <= 1%; ties use the higher threshold to reduce flags.",
+    "selected_threshold": 0.7496764158124354,
+    "selected_threshold_fpr": 0.009897962020741235,
+    "selected_threshold_recall": 0.5056795926361144
+  },
+  "true_negative_count": 71222,
+  "true_positive_count": 1291,
+  "validation_transactions_flagged": 2003
+}

@@ -1,0 +1,8 @@
+{
+  "duplicate_identity_TransactionID_rows_beyond_first": 0,
+  "identity_TransactionIDs_not_present_in_train_transaction_count": 0,
+  "train_identity_row_count": 144233,
+  "train_identity_unique_TransactionID_count": 144233,
+  "train_transaction_TransactionIDs_matching_identity_count": 144233,
+  "train_transaction_identity_coverage_percentage": 24.42391709283029
+}

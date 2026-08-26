@@ -1,0 +1,118 @@
+{
+  "added_raw_categorical_features": [
+    "DeviceInfo",
+    "DeviceType",
+    "card4",
+    "card6"
+  ],
+  "categorical_handling": {
+    "category_cardinalities_from_train_only": {
+      "DeviceInfo": 1571,
+      "DeviceType": 2,
+      "M1": 2,
+      "M2": 2,
+      "M3": 2,
+      "M4": 3,
+      "M5": 2,
+      "M6": 2,
+      "M7": 2,
+      "M8": 2,
+      "M9": 2,
+      "P_emaildomain": 59,
+      "ProductCD": 5,
+      "R_emaildomain": 60,
+      "addr1": 321,
+      "addr2": 69,
+      "card1": 12443,
+      "card2": 500,
+      "card3": 106,
+      "card4": 4,
+      "card5": 111,
+      "card6": 4
+    },
+    "features": [
+      "ProductCD",
+      "card1",
+      "card2",
+      "card3",
+      "card5",
+      "addr1",
+      "addr2",
+      "P_emaildomain",
+      "R_emaildomain",
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "M5",
+      "M6",
+      "M7",
+      "M8",
+      "M9",
+      "DeviceInfo",
+      "DeviceType",
+      "card4",
+      "card6"
+    ],
+    "missing_code": -1,
+    "unknown_validation_code": 0
+  },
+  "execution": {
+    "num_threads": 4,
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.5",
+    "training_iterations_fixed_before_validation": 500
+  },
+  "experiment": "model_b",
+  "generated_at_utc": "2026-08-26T05:16:14.701539+00:00",
+  "identity_source": "/Users/madhav/Downloads/ieee-fraud-detection/train_identity.csv",
+  "memory": {
+    "train_frame_bytes": 151381230,
+    "train_matrix_bytes": 94502376,
+    "validation_frame_bytes": 25744294,
+    "validation_matrix_bytes": 16089192
+  },
+  "model_parameters": {
+    "boosting_type": "gbdt",
+    "colsample_bytree": 1.0,
+    "deterministic": true,
+    "force_col_wise": true,
+    "learning_rate": 0.05,
+    "max_bin": 255,
+    "max_depth": -1,
+    "min_child_samples": 100,
+    "min_split_gain": 0.0,
+    "n_estimators": 500,
+    "n_jobs": 4,
+    "num_leaves": 31,
+    "objective": "binary",
+    "random_state": 20260826,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.0,
+    "scale_pos_weight": 27.52836463223787,
+    "subsample": 1.0,
+    "subsample_freq": 0,
+    "verbosity": -1
+  },
+  "numeric_missing_values": "Preserved as NaN for LightGBM native missing-value handling.",
+  "package_versions": {
+    "lightgbm": "4.7.0",
+    "numpy": "2.5.2",
+    "polars": "1.44.0",
+    "scikit_learn": "1.9.0"
+  },
+  "random_seed": 20260826,
+  "train_boundary": {
+    "max": 11059199,
+    "min": 86400
+  },
+  "train_fraud_count": 15336,
+  "train_row_count": 437511,
+  "transaction_source": "/Users/madhav/Downloads/ieee-fraud-detection/train_transaction.csv",
+  "validation_boundary": {
+    "max": 13391999,
+    "min": 11059200
+  },
+  "validation_fraud_count": 2553,
+  "validation_row_count": 74487
+}

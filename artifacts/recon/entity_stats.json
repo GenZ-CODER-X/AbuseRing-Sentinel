@@ -1,0 +1,732 @@
+{
+  "entities": [
+    {
+      "column": "card1",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "singleton_count": 3444,
+      "singleton_percentage": 0.5831950418261252,
+      "top_20_values": [
+        {
+          "frequency": 14932,
+          "value": 7919
+        },
+        {
+          "frequency": 14162,
+          "value": 9500
+        },
+        {
+          "frequency": 10361,
+          "value": 15885
+        },
+        {
+          "frequency": 10344,
+          "value": 17188
+        },
+        {
+          "frequency": 7945,
+          "value": 15066
+        },
+        {
+          "frequency": 7091,
+          "value": 12695
+        },
+        {
+          "frequency": 6773,
+          "value": 12544
+        },
+        {
+          "frequency": 6771,
+          "value": 6019
+        },
+        {
+          "frequency": 6141,
+          "value": 2803
+        },
+        {
+          "frequency": 5334,
+          "value": 7585
+        },
+        {
+          "frequency": 5172,
+          "value": 10616
+        },
+        {
+          "frequency": 5129,
+          "value": 12839
+        },
+        {
+          "frequency": 4614,
+          "value": 3154
+        },
+        {
+          "frequency": 4410,
+          "value": 2616
+        },
+        {
+          "frequency": 4209,
+          "value": 18132
+        },
+        {
+          "frequency": 4158,
+          "value": 9633
+        },
+        {
+          "frequency": 3977,
+          "value": 15497
+        },
+        {
+          "frequency": 3929,
+          "value": 16132
+        },
+        {
+          "frequency": 3873,
+          "value": 2884
+        },
+        {
+          "frequency": 3748,
+          "value": 16075
+        }
+      ],
+      "unique_count": 13553,
+      "uniqueness_ratio": 0.0229501811900972
+    },
+    {
+      "column": "card2",
+      "null_count": 8933,
+      "null_percentage": 1.5126833068039423,
+      "singleton_count": 0,
+      "singleton_percentage": 0.0,
+      "top_20_values": [
+        {
+          "frequency": 48935,
+          "value": 321.0
+        },
+        {
+          "frequency": 45191,
+          "value": 111.0
+        },
+        {
+          "frequency": 41995,
+          "value": 555.0
+        },
+        {
+          "frequency": 38145,
+          "value": 490.0
+        },
+        {
+          "frequency": 21803,
+          "value": 583.0
+        },
+        {
+          "frequency": 18214,
+          "value": 170.0
+        },
+        {
+          "frequency": 16938,
+          "value": 194.0
+        },
+        {
+          "frequency": 16355,
+          "value": 545.0
+        },
+        {
+          "frequency": 15190,
+          "value": 360.0
+        },
+        {
+          "frequency": 14541,
+          "value": 514.0
+        },
+        {
+          "frequency": 11310,
+          "value": 174.0
+        },
+        {
+          "frequency": 10126,
+          "value": 512.0
+        },
+        {
+          "frequency": 8012,
+          "value": 408.0
+        },
+        {
+          "frequency": 7827,
+          "value": 361.0
+        },
+        {
+          "frequency": 7570,
+          "value": 100.0
+        },
+        {
+          "frequency": 7445,
+          "value": 225.0
+        },
+        {
+          "frequency": 7281,
+          "value": 215.0
+        },
+        {
+          "frequency": 7180,
+          "value": 399.0
+        },
+        {
+          "frequency": 6495,
+          "value": 553.0
+        },
+        {
+          "frequency": 6336,
+          "value": 481.0
+        }
+      ],
+      "unique_count": 500,
+      "uniqueness_ratio": 0.0008596870395301294
+    },
+    {
+      "column": "card3",
+      "null_count": 1565,
+      "null_percentage": 0.26501168422122123,
+      "singleton_count": 16,
+      "singleton_percentage": 0.002716583895751093,
+      "top_20_values": [
+        {
+          "frequency": 521287,
+          "value": 150.0
+        },
+        {
+          "frequency": 56346,
+          "value": 185.0
+        },
+        {
+          "frequency": 1571,
+          "value": 106.0
+        },
+        {
+          "frequency": 1252,
+          "value": 144.0
+        },
+        {
+          "frequency": 1252,
+          "value": 146.0
+        },
+        {
+          "frequency": 962,
+          "value": 117.0
+        },
+        {
+          "frequency": 899,
+          "value": 143.0
+        },
+        {
+          "frequency": 750,
+          "value": 119.0
+        },
+        {
+          "frequency": 460,
+          "value": 102.0
+        },
+        {
+          "frequency": 390,
+          "value": 147.0
+        },
+        {
+          "frequency": 339,
+          "value": 162.0
+        },
+        {
+          "frequency": 253,
+          "value": 203.0
+        },
+        {
+          "frequency": 221,
+          "value": 213.0
+        },
+        {
+          "frequency": 202,
+          "value": 100.0
+        },
+        {
+          "frequency": 184,
+          "value": 200.0
+        },
+        {
+          "frequency": 175,
+          "value": 188.0
+        },
+        {
+          "frequency": 172,
+          "value": 131.0
+        },
+        {
+          "frequency": 166,
+          "value": 134.0
+        },
+        {
+          "frequency": 127,
+          "value": 149.0
+        },
+        {
+          "frequency": 120,
+          "value": 135.0
+        }
+      ],
+      "unique_count": 114,
+      "uniqueness_ratio": 0.0001935566025722654
+    },
+    {
+      "column": "card5",
+      "null_count": 4259,
+      "null_percentage": 0.7212043214684865,
+      "singleton_count": 17,
+      "singleton_percentage": 0.002899633452218305,
+      "top_20_values": [
+        {
+          "frequency": 296546,
+          "value": 226.0
+        },
+        {
+          "frequency": 81513,
+          "value": 224.0
+        },
+        {
+          "frequency": 57140,
+          "value": 166.0
+        },
+        {
+          "frequency": 29105,
+          "value": 102.0
+        },
+        {
+          "frequency": 25941,
+          "value": 117.0
+        },
+        {
+          "frequency": 19737,
+          "value": 138.0
+        },
+        {
+          "frequency": 16945,
+          "value": 195.0
+        },
+        {
+          "frequency": 11720,
+          "value": 137.0
+        },
+        {
+          "frequency": 10298,
+          "value": 126.0
+        },
+        {
+          "frequency": 9924,
+          "value": 219.0
+        },
+        {
+          "frequency": 7103,
+          "value": 202.0
+        },
+        {
+          "frequency": 4524,
+          "value": 162.0
+        },
+        {
+          "frequency": 2048,
+          "value": 229.0
+        },
+        {
+          "frequency": 1551,
+          "value": 197.0
+        },
+        {
+          "frequency": 1338,
+          "value": 150.0
+        },
+        {
+          "frequency": 978,
+          "value": 100.0
+        },
+        {
+          "frequency": 936,
+          "value": 223.0
+        },
+        {
+          "frequency": 752,
+          "value": 118.0
+        },
+        {
+          "frequency": 744,
+          "value": 190.0
+        },
+        {
+          "frequency": 671,
+          "value": 146.0
+        }
+      ],
+      "unique_count": 119,
+      "uniqueness_ratio": 0.00020297434165528135
+    },
+    {
+      "column": "addr1",
+      "null_count": 65706,
+      "null_percentage": 11.12642666034477,
+      "singleton_count": 123,
+      "singleton_percentage": 0.023435981662773372,
+      "top_20_values": [
+        {
+          "frequency": 46335,
+          "value": 299.0
+        },
+        {
+          "frequency": 42751,
+          "value": 325.0
+        },
+        {
+          "frequency": 42020,
+          "value": 204.0
+        },
+        {
+          "frequency": 39870,
+          "value": 264.0
+        },
+        {
+          "frequency": 26287,
+          "value": 330.0
+        },
+        {
+          "frequency": 23078,
+          "value": 315.0
+        },
+        {
+          "frequency": 20827,
+          "value": 441.0
+        },
+        {
+          "frequency": 20141,
+          "value": 272.0
+        },
+        {
+          "frequency": 16105,
+          "value": 123.0
+        },
+        {
+          "frequency": 15243,
+          "value": 126.0
+        },
+        {
+          "frequency": 15160,
+          "value": 184.0
+        },
+        {
+          "frequency": 15149,
+          "value": 337.0
+        },
+        {
+          "frequency": 14979,
+          "value": 191.0
+        },
+        {
+          "frequency": 13856,
+          "value": 181.0
+        },
+        {
+          "frequency": 9806,
+          "value": 143.0
+        },
+        {
+          "frequency": 9478,
+          "value": 476.0
+        },
+        {
+          "frequency": 8486,
+          "value": 310.0
+        },
+        {
+          "frequency": 8478,
+          "value": 472.0
+        },
+        {
+          "frequency": 8425,
+          "value": 327.0
+        },
+        {
+          "frequency": 8268,
+          "value": 512.0
+        }
+      ],
+      "unique_count": 332,
+      "uniqueness_ratio": 0.0006325809684585984
+    },
+    {
+      "column": "addr2",
+      "null_count": 65706,
+      "null_percentage": 11.12642666034477,
+      "singleton_count": 18,
+      "singleton_percentage": 0.003429655853088786,
+      "top_20_values": [
+        {
+          "frequency": 520481,
+          "value": 87.0
+        },
+        {
+          "frequency": 3084,
+          "value": 60.0
+        },
+        {
+          "frequency": 638,
+          "value": 96.0
+        },
+        {
+          "frequency": 91,
+          "value": 32.0
+        },
+        {
+          "frequency": 82,
+          "value": 65.0
+        },
+        {
+          "frequency": 55,
+          "value": 16.0
+        },
+        {
+          "frequency": 47,
+          "value": 31.0
+        },
+        {
+          "frequency": 33,
+          "value": 19.0
+        },
+        {
+          "frequency": 25,
+          "value": 26.0
+        },
+        {
+          "frequency": 20,
+          "value": 27.0
+        },
+        {
+          "frequency": 17,
+          "value": 59.0
+        },
+        {
+          "frequency": 17,
+          "value": 69.0
+        },
+        {
+          "frequency": 16,
+          "value": 34.0
+        },
+        {
+          "frequency": 12,
+          "value": 43.0
+        },
+        {
+          "frequency": 11,
+          "value": 29.0
+        },
+        {
+          "frequency": 11,
+          "value": 98.0
+        },
+        {
+          "frequency": 11,
+          "value": 102.0
+        },
+        {
+          "frequency": 10,
+          "value": 57.0
+        },
+        {
+          "frequency": 10,
+          "value": 68.0
+        },
+        {
+          "frequency": 8,
+          "value": 10.0
+        }
+      ],
+      "unique_count": 74,
+      "uniqueness_ratio": 0.00014099696284920564
+    },
+    {
+      "column": "P_emaildomain",
+      "null_count": 94456,
+      "null_percentage": 15.99485216920107,
+      "singleton_count": 0,
+      "singleton_percentage": 0.0,
+      "top_20_values": [
+        {
+          "frequency": 228355,
+          "value": "gmail.com"
+        },
+        {
+          "frequency": 100934,
+          "value": "yahoo.com"
+        },
+        {
+          "frequency": 45250,
+          "value": "hotmail.com"
+        },
+        {
+          "frequency": 36998,
+          "value": "anonymous.com"
+        },
+        {
+          "frequency": 28289,
+          "value": "aol.com"
+        },
+        {
+          "frequency": 7888,
+          "value": "comcast.net"
+        },
+        {
+          "frequency": 6267,
+          "value": "icloud.com"
+        },
+        {
+          "frequency": 5096,
+          "value": "outlook.com"
+        },
+        {
+          "frequency": 4092,
+          "value": "msn.com"
+        },
+        {
+          "frequency": 4033,
+          "value": "att.net"
+        },
+        {
+          "frequency": 3041,
+          "value": "live.com"
+        },
+        {
+          "frequency": 2970,
+          "value": "sbcglobal.net"
+        },
+        {
+          "frequency": 2705,
+          "value": "verizon.net"
+        },
+        {
+          "frequency": 2396,
+          "value": "ymail.com"
+        },
+        {
+          "frequency": 1909,
+          "value": "bellsouth.net"
+        },
+        {
+          "frequency": 1543,
+          "value": "yahoo.com.mx"
+        },
+        {
+          "frequency": 1522,
+          "value": "me.com"
+        },
+        {
+          "frequency": 1393,
+          "value": "cox.net"
+        },
+        {
+          "frequency": 1011,
+          "value": "optonline.net"
+        },
+        {
+          "frequency": 816,
+          "value": "charter.net"
+        }
+      ],
+      "unique_count": 59,
+      "uniqueness_ratio": 0.00011893147128308915
+    },
+    {
+      "column": "R_emaildomain",
+      "null_count": 453249,
+      "null_percentage": 76.75161716395164,
+      "singleton_count": 0,
+      "singleton_percentage": 0.0,
+      "top_20_values": [
+        {
+          "frequency": 57147,
+          "value": "gmail.com"
+        },
+        {
+          "frequency": 27509,
+          "value": "hotmail.com"
+        },
+        {
+          "frequency": 20529,
+          "value": "anonymous.com"
+        },
+        {
+          "frequency": 11842,
+          "value": "yahoo.com"
+        },
+        {
+          "frequency": 3701,
+          "value": "aol.com"
+        },
+        {
+          "frequency": 2507,
+          "value": "outlook.com"
+        },
+        {
+          "frequency": 1812,
+          "value": "comcast.net"
+        },
+        {
+          "frequency": 1508,
+          "value": "yahoo.com.mx"
+        },
+        {
+          "frequency": 1398,
+          "value": "icloud.com"
+        },
+        {
+          "frequency": 852,
+          "value": "msn.com"
+        },
+        {
+          "frequency": 762,
+          "value": "live.com"
+        },
+        {
+          "frequency": 754,
+          "value": "live.com.mx"
+        },
+        {
+          "frequency": 620,
+          "value": "verizon.net"
+        },
+        {
+          "frequency": 556,
+          "value": "me.com"
+        },
+        {
+          "frequency": 552,
+          "value": "sbcglobal.net"
+        },
+        {
+          "frequency": 459,
+          "value": "cox.net"
+        },
+        {
+          "frequency": 433,
+          "value": "outlook.es"
+        },
+        {
+          "frequency": 430,
+          "value": "att.net"
+        },
+        {
+          "frequency": 422,
+          "value": "bellsouth.net"
+        },
+        {
+          "frequency": 293,
+          "value": "hotmail.fr"
+        }
+      ],
+      "unique_count": 60,
+      "uniqueness_ratio": 0.0004370279188002127
+    }
+  ]
+}

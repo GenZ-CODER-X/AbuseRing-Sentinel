@@ -1,0 +1,57 @@
+{
+  "boundaries": {
+    "final_test": {
+      "TransactionDT_max": 15811131,
+      "TransactionDT_min": 13392000
+    },
+    "train": {
+      "TransactionDT_max": 11059199,
+      "TransactionDT_min": 86400
+    },
+    "validation": {
+      "TransactionDT_max": 13391999,
+      "TransactionDT_min": 11059200
+    }
+  },
+  "boundary_assignment": "TransactionDT only; no shuffle, TransactionID, or label is used to assign partitions.",
+  "checks": {
+    "boundaries_contiguous": true,
+    "boundaries_non_overlapping": true,
+    "expected_TransactionDT_range_present": true,
+    "rows_outside_locked_boundaries_count": 0,
+    "total_row_count": 590540
+  },
+  "chronological_ordering_field": "TransactionDT",
+  "expected_TransactionDT_range": {
+    "max": 15811131,
+    "min": 86400
+  },
+  "final_test_policy": "Final-test metrics are for one-time final evaluation only and must not be used for model tuning.",
+  "observed_TransactionDT_range": {
+    "max": 15811131,
+    "min": 86400
+  },
+  "partitions": {
+    "final_test": {
+      "TransactionDT_max": 15811131,
+      "TransactionDT_min": 13392000,
+      "fraud_count": 2774,
+      "fraud_rate": 0.03531868299763184,
+      "row_count": 78542
+    },
+    "train": {
+      "TransactionDT_max": 11059199,
+      "TransactionDT_min": 86400,
+      "fraud_count": 15336,
+      "fraud_rate": 0.03505283295734279,
+      "row_count": 437511
+    },
+    "validation": {
+      "TransactionDT_max": 13391999,
+      "TransactionDT_min": 11059200,
+      "fraud_count": 2553,
+      "fraud_rate": 0.03427443715010673,
+      "row_count": 74487
+    }
+  }
+}

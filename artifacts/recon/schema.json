@@ -1,0 +1,1770 @@
+{
+  "generated_at_utc": "2026-08-25T18:25:35.117109+00:00",
+  "parsing_policy": {
+    "empty_string_is_null": true,
+    "ignore_errors": false,
+    "null_values": null,
+    "schema_derivation": "Polars scans each complete CSV once with infer_schema_length=None; the resulting schema is reused by every later scan.",
+    "try_parse_dates": false
+  },
+  "polars_version": "1.44.0",
+  "python_version": "3.13.5",
+  "sources": {
+    "train_identity": {
+      "column_count": 41,
+      "columns": [
+        {
+          "name": "TransactionID",
+          "physical_dtype": "Int64"
+        },
+        {
+          "name": "id_01",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_02",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_03",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_04",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_05",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_06",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_07",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_08",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_09",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_10",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_11",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_12",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "id_13",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_14",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_15",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "id_16",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "id_17",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_18",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_19",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_20",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_21",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_22",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_23",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "id_24",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_25",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_26",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_27",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "id_28",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "id_29",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "id_30",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "id_31",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "id_32",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "id_33",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "id_34",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "id_35",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "id_36",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "id_37",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "id_38",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "DeviceType",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "DeviceInfo",
+          "physical_dtype": "String"
+        }
+      ],
+      "path": "/Users/madhav/Downloads/ieee-fraud-detection/train_identity.csv",
+      "row_count": 144233
+    },
+    "train_transaction": {
+      "TransactionID_null_count": 0,
+      "column_count": 394,
+      "columns": [
+        {
+          "name": "TransactionID",
+          "physical_dtype": "Int64"
+        },
+        {
+          "name": "isFraud",
+          "physical_dtype": "Int64"
+        },
+        {
+          "name": "TransactionDT",
+          "physical_dtype": "Int64"
+        },
+        {
+          "name": "TransactionAmt",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "ProductCD",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "card1",
+          "physical_dtype": "Int64"
+        },
+        {
+          "name": "card2",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "card3",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "card4",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "card5",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "card6",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "addr1",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "addr2",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "dist1",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "dist2",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "P_emaildomain",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "R_emaildomain",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "C1",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "C2",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "C3",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "C4",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "C5",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "C6",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "C7",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "C8",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "C9",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "C10",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "C11",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "C12",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "C13",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "C14",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "D1",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "D2",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "D3",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "D4",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "D5",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "D6",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "D7",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "D8",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "D9",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "D10",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "D11",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "D12",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "D13",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "D14",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "D15",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "M1",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "M2",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "M3",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "M4",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "M5",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "M6",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "M7",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "M8",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "M9",
+          "physical_dtype": "String"
+        },
+        {
+          "name": "V1",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V2",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V3",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V4",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V5",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V6",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V7",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V8",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V9",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V10",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V11",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V12",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V13",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V14",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V15",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V16",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V17",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V18",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V19",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V20",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V21",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V22",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V23",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V24",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V25",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V26",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V27",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V28",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V29",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V30",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V31",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V32",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V33",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V34",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V35",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V36",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V37",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V38",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V39",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V40",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V41",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V42",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V43",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V44",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V45",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V46",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V47",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V48",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V49",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V50",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V51",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V52",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V53",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V54",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V55",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V56",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V57",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V58",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V59",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V60",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V61",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V62",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V63",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V64",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V65",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V66",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V67",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V68",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V69",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V70",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V71",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V72",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V73",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V74",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V75",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V76",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V77",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V78",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V79",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V80",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V81",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V82",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V83",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V84",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V85",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V86",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V87",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V88",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V89",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V90",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V91",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V92",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V93",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V94",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V95",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V96",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V97",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V98",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V99",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V100",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V101",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V102",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V103",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V104",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V105",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V106",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V107",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V108",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V109",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V110",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V111",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V112",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V113",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V114",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V115",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V116",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V117",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V118",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V119",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V120",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V121",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V122",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V123",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V124",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V125",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V126",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V127",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V128",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V129",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V130",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V131",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V132",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V133",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V134",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V135",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V136",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V137",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V138",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V139",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V140",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V141",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V142",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V143",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V144",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V145",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V146",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V147",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V148",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V149",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V150",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V151",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V152",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V153",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V154",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V155",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V156",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V157",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V158",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V159",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V160",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V161",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V162",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V163",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V164",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V165",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V166",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V167",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V168",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V169",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V170",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V171",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V172",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V173",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V174",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V175",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V176",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V177",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V178",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V179",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V180",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V181",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V182",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V183",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V184",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V185",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V186",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V187",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V188",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V189",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V190",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V191",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V192",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V193",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V194",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V195",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V196",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V197",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V198",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V199",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V200",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V201",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V202",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V203",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V204",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V205",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V206",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V207",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V208",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V209",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V210",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V211",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V212",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V213",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V214",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V215",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V216",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V217",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V218",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V219",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V220",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V221",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V222",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V223",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V224",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V225",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V226",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V227",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V228",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V229",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V230",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V231",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V232",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V233",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V234",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V235",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V236",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V237",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V238",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V239",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V240",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V241",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V242",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V243",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V244",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V245",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V246",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V247",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V248",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V249",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V250",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V251",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V252",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V253",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V254",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V255",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V256",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V257",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V258",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V259",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V260",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V261",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V262",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V263",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V264",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V265",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V266",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V267",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V268",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V269",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V270",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V271",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V272",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V273",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V274",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V275",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V276",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V277",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V278",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V279",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V280",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V281",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V282",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V283",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V284",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V285",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V286",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V287",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V288",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V289",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V290",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V291",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V292",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V293",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V294",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V295",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V296",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V297",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V298",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V299",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V300",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V301",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V302",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V303",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V304",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V305",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V306",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V307",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V308",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V309",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V310",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V311",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V312",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V313",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V314",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V315",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V316",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V317",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V318",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V319",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V320",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V321",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V322",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V323",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V324",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V325",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V326",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V327",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V328",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V329",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V330",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V331",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V332",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V333",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V334",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V335",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V336",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V337",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V338",
+          "physical_dtype": "Float64"
+        },
+        {
+          "name": "V339",
+          "physical_dtype": "Float64"
+        }
+      ],
+      "duplicate_TransactionID_rows_beyond_first": 0,
+      "path": "/Users/madhav/Downloads/ieee-fraud-detection/train_transaction.csv",
+      "row_count": 590540
+    }
+  }
+}
