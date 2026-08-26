@@ -1,0 +1,15 @@
+{
+  "fixed_training_iterations": 500,
+  "no_random_split_or_shuffle": true,
+  "no_row_or_feature_subsampling": true,
+  "package_versions": {
+    "lightgbm": "4.7.0",
+    "numpy": "2.5.2",
+    "polars": "1.44.0",
+    "scikit_learn": "1.9.0"
+  },
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.5",
+  "random_seed": 20260826,
+  "same_timestamp_batching": true
+}

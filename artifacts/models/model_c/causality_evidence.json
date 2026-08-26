@@ -1,0 +1,43 @@
+{
+  "causality": "Features for a TransactionDT batch read state from strictly earlier TransactionDT values; all same-timestamp rows update state only after feature emission.",
+  "features": [
+    "graph_prior_card_transaction_count",
+    "graph_prior_device_transaction_count",
+    "graph_prior_address_transaction_count",
+    "graph_prior_card_distinct_devices",
+    "graph_prior_device_distinct_cards",
+    "graph_prior_card_distinct_addresses",
+    "graph_prior_address_distinct_cards",
+    "graph_prior_shared_entity_connectivity"
+  ],
+  "forbidden_inputs": [
+    "isFraud",
+    "target encoding",
+    "fraud rates",
+    "fraud counts",
+    "future transactions"
+  ],
+  "full_card_signature": "Concatenation of card1-card6 only when all six raw fields are non-null; components are not independent graph nodes.",
+  "graph_entity_nodes": [
+    "full_card_signature",
+    "DeviceInfo",
+    "addr1"
+  ],
+  "graph_event_row_count": 511998,
+  "graph_input_columns": [
+    "TransactionID",
+    "TransactionDT",
+    "card1",
+    "card2",
+    "card3",
+    "card4",
+    "card5",
+    "card6",
+    "DeviceInfo",
+    "addr1"
+  ],
+  "label_column_passed_to_graph_builder": false,
+  "same_timestamp_batching": true,
+  "train_graph_event_row_count": 437511,
+  "validation_graph_event_row_count": 74487
+}

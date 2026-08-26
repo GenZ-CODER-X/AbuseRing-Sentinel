@@ -1,0 +1,44 @@
+{
+  "features": [
+    {
+      "feature": "graph_prior_card_transaction_count",
+      "importance_gain": 51410.17785072327,
+      "importance_split": 289
+    },
+    {
+      "feature": "graph_prior_address_distinct_cards",
+      "importance_gain": 20647.080196380615,
+      "importance_split": 76
+    },
+    {
+      "feature": "graph_prior_device_transaction_count",
+      "importance_gain": 17999.67419242859,
+      "importance_split": 103
+    },
+    {
+      "feature": "graph_prior_card_distinct_devices",
+      "importance_gain": 16710.747772216797,
+      "importance_split": 122
+    },
+    {
+      "feature": "graph_prior_device_distinct_cards",
+      "importance_gain": 14879.533555984497,
+      "importance_split": 72
+    },
+    {
+      "feature": "graph_prior_address_transaction_count",
+      "importance_gain": 8262.853649139404,
+      "importance_split": 85
+    },
+    {
+      "feature": "graph_prior_card_distinct_addresses",
+      "importance_gain": 3383.628486633301,
+      "importance_split": 43
+    },
+    {
+      "feature": "graph_prior_shared_entity_connectivity",
+      "importance_gain": 2262.633316040039,
+      "importance_split": 8
+    }
+  ]
+}
