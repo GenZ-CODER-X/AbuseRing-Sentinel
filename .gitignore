@@ -4,3 +4,25 @@ __pycache__/
 .pytest_cache/
 .DS_Store
 .env
+
+# Local/generated experiment artifacts
+*.bak
+*.backup
+*.lgb_backup
+*_output.log
+
+# Generated smoke-test datasets
+smoke_test_data/
+
+# Generated model artifacts
+artifacts/models/
+
+# Generated test data
+smoke_test_data/
+
+# Temporary backups / logs
+*.bak
+*.backup
+*_backup
+*_output.log
+artifacts/uid_stats.json
