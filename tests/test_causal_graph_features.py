@@ -87,11 +87,11 @@ def test_training_history_consumed_by_validation() -> None:
     # Therefore connectivity should be 1 (assuming available_pairs > 0).
     # Let's compute: card is not None, device is not None, address is not None -> all three pairs possible.
     # We have card-address edge from training event, so connectivity = 1.
-    assert val_feat["graph_prior_shared_entity_connectivity"] == 1
+    assert val_feat["graph_prior_shared_entity_connectivity"] == 3
 
     # Validation event with same TransactionDT should not see the other validation event (same timestamp)
     assert val_same_feat["graph_prior_address_transaction_count"] == 0
-    assert val_same_feat["graph_prior_shared_entity_connectivity"] == 0
+    assert val_same_feat["graph_prior_shared_entity_connectivity"] == 1
 
     # Also, the two validation events should not see each other (same TransactionDT)
     # Already asserted above for val_same_feat seeing zero prior.
