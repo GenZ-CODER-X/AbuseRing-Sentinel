@@ -26,3 +26,4 @@ smoke_test_data/
 *_backup
 *_output.log
 artifacts/uid_stats.json
+external_baselines/
